@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.page-frame { 
+    border: 2px solid black;
+    margin: 20px;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid gold;
+    margin: 20px 5px;
+}
+
+.main-nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.double-line {
+    border: none;
+    border-top: 3px solid gold; 
+    border-bottom: 3px solid gold; 
+    height: 50px; 
+    margin: 20px 5px; 
+}
+
+.book-details {
+    text-align: right;
+    margin-right: 2.5rem;
+}
+
+.book-header {
+    max-width: 400px;
+    margin-left: 3rem;
+}
+
+.book-header img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.book-header h2 {
+    color: darkred;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media (min-width: 700px) {
+    .double-line {
+        border: none;
+        border-top: 3px solid gold;
+        margin: 20px 5px;
+    }
+    .book {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        position: relative;
+    }
+    .book::before { 
+        content: ""; 
+        position: absolute; 
+        left: 200px;
+        top: 0; 
+        bottom: 0; 
+        width: 3px; 
+        background: gold;
+    }
+    .book-header{
+        max-width: 600px;
+    }
+    .book-header img {
+        max-width: 400px;
+    }
+}
