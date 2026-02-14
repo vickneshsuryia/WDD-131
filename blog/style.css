@@ -41,6 +41,10 @@ hr {
     margin: 20px 5px; 
 }
 
+.book {
+    margin-bottom: 40px;
+}
+
 .book-details {
     text-align: right;
     margin-right: 2.5rem;
@@ -77,19 +81,19 @@ footer {
         grid-template-columns: 200px 1fr;
         position: relative;
     }
-    .book::before { 
-        content: ""; 
-        position: absolute; 
+    .book::before {
+        content: "";
+        position: absolute;
         left: 200px;
-        top: 0; 
-        bottom: 0; 
-        width: 3px; 
+        top: 20px;
+        height: calc(100% - 40px);
+        width: 3px;
         background: gold;
     }
     .book-header{
         max-width: 600px;
     }
     .book-header img {
-        max-width: 400px;
+        max-width: 250px;
     }
 }
