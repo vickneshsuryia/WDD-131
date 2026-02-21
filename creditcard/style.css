@@ -10,7 +10,7 @@ body {
 
 #cardWrapper {
   display: grid;
-  grid-template-columns: 200px 360px 240px;
+  grid-template-columns: 200px 360px 200px;
   grid-template-rows: 60px 240px 60px 70px;
 }
 
@@ -152,6 +152,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 45px;
 }
 
 .cvcSection label {
