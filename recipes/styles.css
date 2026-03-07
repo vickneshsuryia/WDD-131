@@ -1,0 +1,132 @@
+header {
+    border-bottom: 2px solid rgb(180, 177, 177);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+    line-height: 1;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+header img {
+    height: 200px;
+    width: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 20px 14px;
+    flex: 1;
+    font-size: 35px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-left: 2px solid gray;
+}
+
+.search-bar button img {
+  width: 50px;
+  height: 50px;
+}
+
+.food-list {
+    border: 2px solid black;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.food-image img{
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgb(251, 246, 246);
+    color: black;
+    padding: 5px 5px;
+    font-size: 35px;
+    border: 2px solid lightgray;
+    margin-bottom: 0px;
+}
+
+.food-recipe p {
+    display: none;
+}
+
+.food-recipe h2 {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    color: rgb(109, 145, 207);
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
+}
+
+.social img {
+    width: 50px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width:800px) {
+.food-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.food-recipe p {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.food-recipe {
+    padding-left: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+}
