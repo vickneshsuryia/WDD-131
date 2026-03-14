@@ -1,3 +1,9 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
     border-bottom: 2px solid rgb(180, 177, 177);
     margin-bottom: 30px;
